@@ -20,3 +20,8 @@ $ dc up -d --build
 ポート:4306
 ```
 
+### ※注意
+* MySQL8系だとログイン認証がデフォルトで`caching_sha2_password`になっており、Sequel Proなどのクライアントからログインできない
+* 解決策としてはMySQLの5.7系を使うか、認証を`mysql_native_password`に変える
+  * [Sequel ProでMySQLにログインできない](https://qiita.com/ysk1o/items/7f0ca12ced72363f9448)
+* 今回の方法ではMySQLのバージョンを5.7系を使う様にしています
