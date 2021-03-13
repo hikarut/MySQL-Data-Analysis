@@ -1,8 +1,9 @@
-# WHAT
+# What
 * csvファイルを元にMySQLにデータ入れてSQLでデータ分析を行う環境のセットアップ
 * MacのSQLクライアントは[Sequel Pro](http://sequelpro.com/)を利用
+* [Docker](https://docs.docker.jp/docker-for-mac/install.html)を事前にインストールする
 
-# HOW
+# How
 ※`dc` = `docker-compose`
 
 * DockerでMySQL環境をビルド&起動
