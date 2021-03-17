@@ -3,7 +3,7 @@ version: '3'
 services:
    mysql:
      build: . #Dockerfileからビルド
-     image: mysql:5.7 #imageの名前
+     image: mysql:8.0 #imageの名前
      container_name: 'mysql-data'
      volumes:
        - db_data:/var/lib/mysql
